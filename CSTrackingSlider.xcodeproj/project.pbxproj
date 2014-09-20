@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC6F686F19CD636B00391435 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F686E19CD636B00391435 /* main.m */; };
+		CC6F687219CD636B00391435 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F687119CD636B00391435 /* AppDelegate.m */; };
+		CC6F687519CD636B00391435 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F687419CD636B00391435 /* ViewController.m */; };
+		CC6F687819CD636B00391435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6F687619CD636B00391435 /* Main.storyboard */; };
+		CC6F687A19CD636B00391435 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6F687919CD636B00391435 /* Images.xcassets */; };
+		CC6F688619CD636B00391435 /* CSTrackingSliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F688519CD636B00391435 /* CSTrackingSliderTests.m */; };
+		CC6F689319CD63B700391435 /* CSTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F689219CD63B700391435 /* CSTrackingSlider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC6F688019CD636B00391435 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC6F686119CD636B00391435 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC6F686819CD636B00391435;
+			remoteInfo = CSTrackingSlider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC6F686919CD636B00391435 /* CSTrackingSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSTrackingSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6F686D19CD636B00391435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC6F686E19CD636B00391435 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC6F687019CD636B00391435 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CC6F687119CD636B00391435 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CC6F687319CD636B00391435 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CC6F687419CD636B00391435 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CC6F687719CD636B00391435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC6F687919CD636B00391435 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CC6F687F19CD636B00391435 /* CSTrackingSliderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSTrackingSliderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6F688419CD636B00391435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC6F688519CD636B00391435 /* CSTrackingSliderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSTrackingSliderTests.m; sourceTree = "<group>"; };
+		CC6F689119CD63B700391435 /* CSTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTrackingSlider.h; sourceTree = "<group>"; };
+		CC6F689219CD63B700391435 /* CSTrackingSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTrackingSlider.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC6F686619CD636B00391435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC6F687C19CD636B00391435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC6F686019CD636B00391435 = {
+			isa = PBXGroup;
+			children = (
+				CC6F686B19CD636B00391435 /* CSTrackingSlider */,
+				CC6F688219CD636B00391435 /* CSTrackingSliderTests */,
+				CC6F686A19CD636B00391435 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC6F686A19CD636B00391435 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F686919CD636B00391435 /* CSTrackingSlider.app */,
+				CC6F687F19CD636B00391435 /* CSTrackingSliderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC6F686B19CD636B00391435 /* CSTrackingSlider */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F688F19CD638600391435 /* CSTrackingSlider */,
+				CC6F687019CD636B00391435 /* AppDelegate.h */,
+				CC6F687119CD636B00391435 /* AppDelegate.m */,
+				CC6F687319CD636B00391435 /* ViewController.h */,
+				CC6F687419CD636B00391435 /* ViewController.m */,
+				CC6F687619CD636B00391435 /* Main.storyboard */,
+				CC6F687919CD636B00391435 /* Images.xcassets */,
+				CC6F686C19CD636B00391435 /* Supporting Files */,
+			);
+			path = CSTrackingSlider;
+			sourceTree = "<group>";
+		};
+		CC6F686C19CD636B00391435 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F686D19CD636B00391435 /* Info.plist */,
+				CC6F686E19CD636B00391435 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC6F688219CD636B00391435 /* CSTrackingSliderTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F688519CD636B00391435 /* CSTrackingSliderTests.m */,
+				CC6F688319CD636B00391435 /* Supporting Files */,
+			);
+			path = CSTrackingSliderTests;
+			sourceTree = "<group>";
+		};
+		CC6F688319CD636B00391435 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F688419CD636B00391435 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC6F688F19CD638600391435 /* CSTrackingSlider */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F689119CD63B700391435 /* CSTrackingSlider.h */,
+				CC6F689219CD63B700391435 /* CSTrackingSlider.m */,
+			);
+			name = CSTrackingSlider;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC6F686819CD636B00391435 /* CSTrackingSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC6F688919CD636B00391435 /* Build configuration list for PBXNativeTarget "CSTrackingSlider" */;
+			buildPhases = (
+				CC6F686519CD636B00391435 /* Sources */,
+				CC6F686619CD636B00391435 /* Frameworks */,
+				CC6F686719CD636B00391435 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSTrackingSlider;
+			productName = CSTrackingSlider;
+			productReference = CC6F686919CD636B00391435 /* CSTrackingSlider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC6F687E19CD636B00391435 /* CSTrackingSliderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC6F688C19CD636B00391435 /* Build configuration list for PBXNativeTarget "CSTrackingSliderTests" */;
+			buildPhases = (
+				CC6F687B19CD636B00391435 /* Sources */,
+				CC6F687C19CD636B00391435 /* Frameworks */,
+				CC6F687D19CD636B00391435 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC6F688119CD636B00391435 /* PBXTargetDependency */,
+			);
+			name = CSTrackingSliderTests;
+			productName = CSTrackingSliderTests;
+			productReference = CC6F687F19CD636B00391435 /* CSTrackingSliderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC6F686119CD636B00391435 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = shenqi329;
+				TargetAttributes = {
+					CC6F686819CD636B00391435 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					CC6F687E19CD636B00391435 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = CC6F686819CD636B00391435;
+					};
+				};
+			};
+			buildConfigurationList = CC6F686419CD636B00391435 /* Build configuration list for PBXProject "CSTrackingSlider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC6F686019CD636B00391435;
+			productRefGroup = CC6F686A19CD636B00391435 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC6F686819CD636B00391435 /* CSTrackingSlider */,
+				CC6F687E19CD636B00391435 /* CSTrackingSliderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC6F686719CD636B00391435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6F687819CD636B00391435 /* Main.storyboard in Resources */,
+				CC6F687A19CD636B00391435 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC6F687D19CD636B00391435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC6F686519CD636B00391435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6F687519CD636B00391435 /* ViewController.m in Sources */,
+				CC6F689319CD63B700391435 /* CSTrackingSlider.m in Sources */,
+				CC6F687219CD636B00391435 /* AppDelegate.m in Sources */,
+				CC6F686F19CD636B00391435 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC6F687B19CD636B00391435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6F688619CD636B00391435 /* CSTrackingSliderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC6F688119CD636B00391435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC6F686819CD636B00391435 /* CSTrackingSlider */;
+			targetProxy = CC6F688019CD636B00391435 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC6F687619CD636B00391435 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC6F687719CD636B00391435 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC6F688719CD636B00391435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC6F688819CD636B00391435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC6F688A19CD636B00391435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CSTrackingSlider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC6F688B19CD636B00391435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CSTrackingSlider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CC6F688D19CD636B00391435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CSTrackingSlider.app/CSTrackingSlider";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CSTrackingSliderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		CC6F688E19CD636B00391435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CSTrackingSlider.app/CSTrackingSlider";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CSTrackingSliderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC6F686419CD636B00391435 /* Build configuration list for PBXProject "CSTrackingSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC6F688719CD636B00391435 /* Debug */,
+				CC6F688819CD636B00391435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC6F688919CD636B00391435 /* Build configuration list for PBXNativeTarget "CSTrackingSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC6F688A19CD636B00391435 /* Debug */,
+				CC6F688B19CD636B00391435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC6F688C19CD636B00391435 /* Build configuration list for PBXNativeTarget "CSTrackingSliderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC6F688D19CD636B00391435 /* Debug */,
+				CC6F688E19CD636B00391435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC6F686119CD636B00391435 /* Project object */;
+}

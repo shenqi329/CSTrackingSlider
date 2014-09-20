@@ -20,7 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.slider  = [[CSTrackingSlider alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height - 100, self.view.bounds.size.width, 100)];
+    self.slider  = [[CSTrackingSlider alloc]initWithFrame:CGRectMake(0, self.view.bounds.    size.height - 100, self.view.bounds.size.width, 100)];
+    
     
     [self.view addSubview:self.slider];
 }

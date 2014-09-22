@@ -35,7 +35,7 @@
     part3.color = [UIColor blueColor];
     
     self.slider.partInfoArray = [NSArray arrayWithObjects:part1,part2,part3,nil];
-    [self.view addSubview:self.slider];
+    //[self.view addSubview:self.slider];
 }
 
 - (void)didReceiveMemoryWarning {

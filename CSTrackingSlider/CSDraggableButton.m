@@ -59,6 +59,11 @@
     return self;
 }
 
+- (void)dealloc
+{
+     NSLog(@"%s",__FUNCTION__);
+}
+
 - (id)initInKeyWindowWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {

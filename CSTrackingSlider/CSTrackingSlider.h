@@ -20,4 +20,6 @@
 
 @property(nonatomic,retain) NSArray *partInfoArray; //PartInfo份数信息
 
+@property(nonatomic,copy) void(^trackingBlock)(CSTrackingSlider *slider,CGFloat precent);
+
 @end

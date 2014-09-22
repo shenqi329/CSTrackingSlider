@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 
-@interface PartInfo : NSObject
+@interface CSPartInfo : NSObject
 
-@property(nonatomic,assign) NSUInteger  part;     //份数
+@property(nonatomic,assign) CGFloat     part;     //份数
 @property(nonatomic,assign) UIColor     *color;   //用什么颜色显示
 
 @end

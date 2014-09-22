@@ -7,39 +7,114 @@
 //
 
 #import "CSTrackingSlider.h"
+#import "CSDraggableButton.h"
+
+@implementation CSPartInfo
+
+@end
+
+@interface CSTrackingSlider()
+
+@property(nonatomic,assign) CGFloat startX;
+@property(nonatomic,assign) CGFloat startY;
+@property(nonatomic,assign) CGFloat totalWidth;
+@property(nonatomic,assign) CGFloat height;
+
+@property(nonatomic,assign) CGFloat cursorLocationX;
+@property(nonatomic,assign) CGFloat cursorLocationY;
+
+@property(nonatomic,retain) CSDraggableButton *dragBtn;
+
+@end
 
 @implementation CSTrackingSlider
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
         self.backgroundColor = [UIColor colorWithRed:72.0/255.0 green:73.0/255.0 blue:73.0/255.0 alpha:1];
+
+        self.startX = 20;
+        self.startY = 20;
+        self.height = 20;
+        self.cursorLocationX = self.startX;
+        self.cursorLocationY = self.startY + self.height;
+        self.totalWidth = self.bounds.size.width - _startX*2;
+        
+        self.dragBtn = [[CSDraggableButton alloc] initWithFrame:CGRectMake(0, 40, 40, 40)];
+        self.dragBtn.backgroundColor = [UIColor whiteColor];
+        [self.dragBtn setDragFrame:CGRectMake(0, 40, self.bounds.size.width, 40)];
+        [self addSubview:self.dragBtn];
+        
+        [self.dragBtn addObserver:self forKeyPath:@"center" options:NSKeyValueObservingOptionNew context:nil];
     }
     return self;
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if ([keyPath isEqualToString:@"center"] ) {
+        if (object == self.dragBtn) {
+            CGPoint center = [[change objectForKey:@"new"] CGPointValue];
+            CGFloat percent = (center.x - self.dragBtn.bounds.size.width/2)/(self.bounds.size.width - self.dragBtn.bounds.size.width);
+            //NSLog(@"%f",percent);
+        }
+    } else {
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    }
 }
 
 - (void)drawRect:(CGRect)rect
 {
     [super drawRect:rect];
     
+    CGFloat curX = _startX;
+    
     NSUInteger totalPart = 0;
     
-    for (PartInfo *info in self.partInfoArray) {
+    for (CSPartInfo *info in self.partInfoArray) {
         totalPart += info.part;
     }
     CGContextClearRect(UIGraphicsGetCurrentContext(),rect);
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    
-    CGRect rectangle= CGRectMake(20, 20 , self.bounds.size.width - 40, 20);
-    UIBezierPath *roundedRectPath = [UIBezierPath bezierPathWithRoundedRect:rectangle cornerRadius:2.0];
+    CGContextSaveGState(context);
+    CGRect rectangle= CGRectMake(_startX, _startY , _totalWidth , 20);
+    UIBezierPath *roundedRectPath = [UIBezierPath bezierPathWithRoundedRect:rectangle cornerRadius:0.0];
     CGContextAddPath(context, roundedRectPath.CGPath);
-    //CGContextAddRect(context, rectangle);
     CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
     CGContextFillPath(context);
+    CGContextRestoreGState(context);
     
-    
+    curX = _startX;
+    for (CSPartInfo *info in self.partInfoArray) {
+        CGFloat curWidth = (info.part/totalPart)*_totalWidth;
+        CGContextSaveGState(context);
+        CGRect rectangle = CGRectMake(curX, _startY, curWidth, 20);
+        curX += curWidth;
+        CGContextAddRect(context, rectangle);
+        CGContextSetFillColorWithColor(context, info.color.CGColor);
+        CGContextFillPath(context);
+        CGContextRestoreGState(context);
+    }
 }
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

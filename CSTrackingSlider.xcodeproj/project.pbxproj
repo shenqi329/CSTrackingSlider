@@ -14,6 +14,7 @@
 		CC6F687A19CD636B00391435 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6F687919CD636B00391435 /* Images.xcassets */; };
 		CC6F688619CD636B00391435 /* CSTrackingSliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F688519CD636B00391435 /* CSTrackingSliderTests.m */; };
 		CC6F689319CD63B700391435 /* CSTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F689219CD63B700391435 /* CSTrackingSlider.m */; };
+		CCC22D0419D041D200023FF8 /* CSDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC22D0319D041D200023FF8 /* CSDraggableButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 		CC6F688519CD636B00391435 /* CSTrackingSliderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSTrackingSliderTests.m; sourceTree = "<group>"; };
 		CC6F689119CD63B700391435 /* CSTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTrackingSlider.h; sourceTree = "<group>"; };
 		CC6F689219CD63B700391435 /* CSTrackingSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTrackingSlider.m; sourceTree = "<group>"; };
+		CCC22D0219D041D200023FF8 /* CSDraggableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDraggableButton.h; sourceTree = "<group>"; };
+		CCC22D0319D041D200023FF8 /* CSDraggableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDraggableButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 		CC6F688F19CD638600391435 /* CSTrackingSlider */ = {
 			isa = PBXGroup;
 			children = (
+				CCC22D0219D041D200023FF8 /* CSDraggableButton.h */,
+				CCC22D0319D041D200023FF8 /* CSDraggableButton.m */,
 				CC6F689119CD63B700391435 /* CSTrackingSlider.h */,
 				CC6F689219CD63B700391435 /* CSTrackingSlider.m */,
 			);
@@ -231,6 +236,7 @@
 				CC6F687519CD636B00391435 /* ViewController.m in Sources */,
 				CC6F689319CD63B700391435 /* CSTrackingSlider.m in Sources */,
 				CC6F687219CD636B00391435 /* AppDelegate.m in Sources */,
+				CCC22D0419D041D200023FF8 /* CSDraggableButton.m in Sources */,
 				CC6F686F19CD636B00391435 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +422,7 @@
 				CC6F688B19CD636B00391435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC6F688C19CD636B00391435 /* Build configuration list for PBXNativeTarget "CSTrackingSliderTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				CC6F688E19CD636B00391435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
